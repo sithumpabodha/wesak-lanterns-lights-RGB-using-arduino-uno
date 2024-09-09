@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Sithum Pabodha",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 96.6, "left": -39, "attrs": {} },
+    { "type": "wokwi-rgb-led", "id": "rgb1", "top": -63.2, "left": 20.3, "attrs": {} },
+    { "type": "wokwi-rgb-led", "id": "rgb2", "top": -63.2, "left": 145.1, "attrs": {} },
+    { "type": "wokwi-rgb-led", "id": "rgb3", "top": -63.2, "left": 231.5, "attrs": {} },
+    { "type": "wokwi-rgb-led", "id": "rgb4", "top": -63.2, "left": -94.9, "attrs": {} }
+  ],
+  "connections": [
+    [ "rgb1:COM", "rgb4:COM", "green", [ "v0" ] ],
+    [ "rgb1:COM", "rgb2:COM", "green", [ "v0" ] ],
+    [ "rgb2:COM", "rgb3:COM", "green", [ "v0" ] ],
+    [ "rgb4:R", "uno:13", "green", [ "v57.6", "h163.2" ] ],
+    [ "rgb4:G", "uno:12", "green", [ "v48", "h154.9" ] ],
+    [ "rgb4:B", "uno:11", "green", [ "v38.4", "h164.8" ] ],
+    [ "rgb1:R", "uno:10", "green", [ "v28.8", "h86.4" ] ],
+    [ "rgb1:G", "uno:9", "green", [ "v19.2", "h68.5" ] ],
+    [ "rgb1:B", "uno:8", "green", [ "v0", "h40" ] ],
+    [ "rgb2:R", "uno:7", "green", [ "v0" ] ],
+    [ "rgb3:COM", "uno:5V", "green", [ "v326", "h-95.9" ] ],
+    [ "uno:6", "rgb2:G", "green", [ "v-105.6", "h13.3" ] ],
+    [ "rgb2:B", "uno:5", "green", [ "v28.8", "h-8" ] ],
+    [ "rgb3:R", "uno:4", "green", [ "v28.8", "h-38.4" ] ],
+    [ "rgb3:G", "uno:3", "green", [ "v38.4", "h-56.3" ] ],
+    [ "rgb3:B", "uno:2", "green", [ "v48", "h-65.6" ] ]
+  ],
+  "dependencies": {}
+}
